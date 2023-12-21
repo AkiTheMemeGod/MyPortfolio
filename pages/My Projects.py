@@ -29,7 +29,7 @@ with col2:
         st.progress(int(row['progress']))
         st.subheader(row["description"])
         st.info(f"Language : {row['language']}")
-        st.image(f"images\{row['image']}")
+        st.image(f"images/'{row['image']}")
         # st.write(f"""[Github link]({row['url']})""")
         st.link_button(label="GitHub",url=row['url'],use_container_width=True,
                        type="primary")
