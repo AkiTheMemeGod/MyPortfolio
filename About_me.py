@@ -34,3 +34,5 @@ with col2:
         st.subheader("Hobbies")
         for i in hobbies:
             st.info("⌁ "+i)
+        st.write("")
+        st.link_button("My Projects",url="My_Projects",use_container_width=True)
