@@ -107,3 +107,8 @@ with st.sidebar:
                    use_container_width=True,
                    type="secondary",
                    help="My Twitter")
+    st.link_button("GitHub",
+                   url="https://github.com/AkiTheMemeGod",
+                   use_container_width=True,
+                   type="secondary",
+                   help="My GitHub")
