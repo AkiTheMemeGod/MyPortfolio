@@ -21,7 +21,7 @@ with col1:
 
 with col2:
     about = """
-    <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">Hi there, I'm Akash K</h1>
+    <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">Hey there, I'm Akash</h1>
     <br>
     <p style="font-family:monospace; color:black; font-size: 20px;", align="justify">
     Hey there! I'm a second-year B.Tech student diving into the world
