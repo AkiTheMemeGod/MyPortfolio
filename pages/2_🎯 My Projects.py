@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 st.set_page_config(layout="wide", page_icon="🎯", page_title="My Projects")
+st.markdown("""<h1 style="font-family:monospace; color:#8420BD; font-size: 100px;",
+ align="center">My Projects</h1><br><br><br>""",
+                unsafe_allow_html=True)
 col1, empty_col,col2 = st.columns([1.5, 0.2, 1.5])
 data = pd.read_csv("data.csv", sep=";")
 with col1:

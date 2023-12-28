@@ -26,18 +26,11 @@ def sendmail(From: str, To: str, mesg: str, about: str):
     s.quit()
 
 
-c1, c2, c3 = st.columns([1.5, 3, 1])
+st.markdown("""<h1 style="font-family:monospace; color:black; font-size: 100px;", align="center">Contact Me</h1>
+<br><br><br>""",
+                unsafe_allow_html=True)
 
-with c2:
-    st.markdown("###")
-    st.markdown("###")
-
-    st.title("Contact Me")
-    st.markdown("###")
-    st.markdown("###")
-    st.markdown("###")
-
-with st.form("my_form",clear_on_submit=True):
+with st.form("my_form", clear_on_submit=True):
     email = st.text_input(label="Your E-mail address here:")
     what = st.selectbox(label="What do you want to talk about ?",placeholder="Select an option",options=opts,index=0)
     message = st.text_area(label="Your message: ")
