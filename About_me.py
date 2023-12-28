@@ -24,7 +24,7 @@ with col2:
     st.subheader("Education")
     st.info(education)
 
-    #with st.expander(label="Skills"):
+    # with st.expander(label="Skills"):
     col3, col4 = st.columns(2)
     with col3:
         st.subheader("Skills")
