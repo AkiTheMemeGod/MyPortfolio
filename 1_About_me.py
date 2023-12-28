@@ -90,3 +90,20 @@ with n2:
                    use_container_width=True,
                    type="primary",
                    help="Projects that i'm currently working on!")
+with st.sidebar:
+    st.header("Follow-Me On")
+    st.link_button("Linked-In",
+                   url="https://www.linkedin.com/in/akash-k-8b2132251/",
+                   use_container_width=True,
+                   type="secondary",
+                   help="Linked-In Profile")
+    st.link_button("Instagram",
+                   url="https://www.instagram.com/aki_the_meme_god/",
+                   use_container_width=True,
+                   type="secondary",
+                   help="My Instagram")
+    st.link_button("Twitter",
+                   url="https://twitter.com/AkiTheMemeGod1",
+                   use_container_width=True,
+                   type="secondary",
+                   help="My Twitter")
