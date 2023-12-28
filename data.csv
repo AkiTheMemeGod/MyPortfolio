@@ -15,3 +15,4 @@ Expense Tracker;An Application Developed in Flutter to Track your daily expenses
 Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;80;https://github.com/AkiTheMemeGod/MyPortfolio;Python;14.png
 Todo App (Web App);A distraction-free web-app to help you focus on creating and completing tasks.;100;https://github.com/AkiTheMemeGod/Todo-WebApp;Python;15.png
 Expense Tracker(Web App);An interactive web app for managing your daily expenses and incomes;100;https://spend-it-akash.streamlit.app/;Python;20.png
+Invoice Generator;A custom made invoice generator that reads data from a .csv file and outputs a fancy invoice;100;https://github.com/AkiTheMemeGod/Invoice_Generator_for_expense_tracker;python;17.png
