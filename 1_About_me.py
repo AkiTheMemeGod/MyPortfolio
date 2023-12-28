@@ -66,12 +66,12 @@ st.markdown("---")
     # with st.expander(label="Skills"):
 col3, emp, col4 = st.columns([1,0.1,1])
 with col3:
-    st.markdown("""<h1 style="font-family:monospace; color:black; font-size: 80px;", align="center">Skills</h1>""",
+    st.markdown("""<h1 style="font-family:monospace; color:black; font-size: 80px;", align="center">💻 Skills</h1>""",
                 unsafe_allow_html=True)
     for i in skills:
         st.info("⌁ "+i)
 with col4:
-    st.markdown("""<h1 style="font-family:monospace; color:black; font-size: 80px;", align="center">Hobbies</h1>""",
+    st.markdown("""<h1 style="font-family:monospace; color:black; font-size: 80px;", align="center">🚴 Hobbies</h1>""",
                 unsafe_allow_html=True)
     for i in hobbies:
         st.info("⌁ "+i)
