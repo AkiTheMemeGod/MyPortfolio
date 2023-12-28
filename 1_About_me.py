@@ -21,7 +21,7 @@ with col1:
 
 with col2:
     about = """
-    <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">Hey there, I'm Akash</h1>
+    <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">👋 Hey there, I'm Akash</h1>
     <br>
     <p style="font-family:monospace; color:black; font-size: 20px;", align="justify">
     Hey there! I'm a second-year B.Tech student diving into the world
@@ -31,7 +31,7 @@ with col2:
        Join me as I navigate through the exciting challenges of this dynamic field and
         chase innovation wherever it leads!</p>"""
     education = """
-    <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">Education</h1>
+    <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">📖 Education</h1>
     <br>
 
 <h3 style="font-family:monospace; color:black; font-size: 30px;", align="center">🏫 St.John's English School & Junior College</h3>
