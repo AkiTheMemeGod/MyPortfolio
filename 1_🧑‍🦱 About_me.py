@@ -6,8 +6,9 @@ skills = ["Python",
           "Game Development"]
 hobbies = ["Gaming", "Coding", "Guitar", "Competitive Touch-Typing"]
 
-st.set_page_config(layout="wide")
-st.title('My Portfolio',anchor="True")
+st.set_page_config(layout="wide",page_title="Akash's Portfolio", page_icon="🧑‍🦱")
+
+st.title('My Portfolio', anchor="True")
 
 col1, col2 = st.columns(2)
 
@@ -21,8 +22,12 @@ with col2:
     An Aspiring python developer and an Cybersecurity Aspirant"""
     education = "II Year in B.Tech Computer-Science Engineering Specialization in Cybersecurity"
     st.info(about)
+    st.markdown("###")
+    st.markdown("###")
     st.subheader("Education")
     st.info(education)
+    st.markdown("###")
+    st.markdown("###")
 
     # with st.expander(label="Skills"):
     col3, col4 = st.columns(2)
@@ -34,5 +39,8 @@ with col2:
         st.subheader("Hobbies")
         for i in hobbies:
             st.info("⌁ "+i)
-        st.write("")
-        st.link_button("My Projects",url="My_Projects",use_container_width=True)
+        st.link_button("My Projects",
+                       url="My_Projects",
+                       use_container_width=True,
+                       type="primary",
+                       help="Projects that i'm currently working on!")

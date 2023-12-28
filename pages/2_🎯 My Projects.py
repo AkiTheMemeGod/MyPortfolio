@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_icon="🎯", page_title="My Projects")
 col1, empty_col,col2 = st.columns([1.5, 0.2, 1.5])
 data = pd.read_csv("data.csv", sep=";")
 with col1:

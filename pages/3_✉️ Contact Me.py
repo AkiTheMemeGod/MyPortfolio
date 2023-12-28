@@ -2,7 +2,7 @@ import streamlit as st
 import smtplib as sm
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Contact Me", page_icon="✉️")
 
 opts = ["Job inquiries", "Project idea", "Other"]
 
@@ -26,17 +26,28 @@ def sendmail(From: str, To: str, mesg: str, about: str):
     s.quit()
 
 
-st.title("Contact Me")
+c1, c2, c3 = st.columns([1.5, 3, 1])
+
+with c2:
+    st.markdown("###")
+    st.markdown("###")
+
+    st.title("Contact Me")
+    st.markdown("###")
+    st.markdown("###")
+    st.markdown("###")
+
 with st.form("my_form",clear_on_submit=True):
     email = st.text_input(label="Your E-mail address here:")
     what = st.selectbox(label="What do you want to talk about ?",placeholder="Select an option",options=opts,index=0)
     message = st.text_area(label="Your message: ")
+
+    sent = st.form_submit_button("Send")
+if sent:
     if email and message != "":
-        pass
+        sendmail(email, "k.akashkumar@gmail.com", message, what)
+        st.success("Email Sent Successfully !")
     else:
         st.error("The feilds are empty")
-    sent = st.form_submit_button("Send")
-    if sent:
-        sendmail(email, "k.akashkumar@gmail.com", message, what)
-        st.info("Email Sent Successfully !")
+
 
