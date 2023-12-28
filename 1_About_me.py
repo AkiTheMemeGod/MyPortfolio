@@ -4,7 +4,7 @@ skills = ["Python",
           "Flutter",
           "Web Development",
           "Game Development"]
-hobbies = ["Gaming", "Coding", "Musical Instruments", "Competitive Touch-Typing", ""]
+hobbies = ["Gaming", "Coding", "Musical Instruments", "Competitive Touch-Typing", "Cycling"]
 
 st.set_page_config(layout="wide",page_title="Akash's Portfolio", page_icon="🧑‍🦱")
 
