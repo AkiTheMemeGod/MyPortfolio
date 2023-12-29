@@ -5,7 +5,7 @@ skills = ["Python",
           "Web Development",
           "Game Development"]
 hobbies = ["Gaming", "Coding", "Musical Instruments", "Competitive Touch-Typing", "Cycling"]
-
+# from Pycharm Professional Edition
 st.set_page_config(layout="wide",page_title="Akash's Portfolio", page_icon="🧑‍🦱")
 
 st.markdown("""<h1 style="font-family:monospace; color:#8420BD; font-size: 100px;", align="center">My portfolio</h1>
