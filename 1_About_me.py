@@ -97,11 +97,13 @@ with st.sidebar:
                    use_container_width=True,
                    type="secondary",
                    help="Linked-In Profile")
-    st.link_button("Instagram",
-                   url="https://www.instagram.com/aki_the_meme_god/",
-                   use_container_width=True,
-                   type="secondary",
-                   help="My Instagram")
+
+    # st.link_button("Instagram",
+    #               url="https://www.instagram.com/aki_the_meme_god/",
+    #               use_container_width=True,
+    #               type="secondary",
+    #               help="My Instagram")
+
     st.link_button("Twitter",
                    url="https://twitter.com/AkiTheMemeGod1",
                    use_container_width=True,
