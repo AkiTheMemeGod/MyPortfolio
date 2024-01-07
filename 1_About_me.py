@@ -1,4 +1,6 @@
 import streamlit as st
+
+
 skills = ["Python",
           "Ethical Hacking",
           "Flutter",
@@ -7,10 +9,38 @@ skills = ["Python",
 hobbies = ["Gaming", "Coding", "Musical Instruments", "Competitive Touch-Typing", "Cycling"]
 # from Pycharm Professional Edition
 st.set_page_config(layout="wide",page_title="Akash's Portfolio", page_icon="🧑‍🦱")
+pg_bg_img = f"""
+<style>
+[data-testid="stApp"] {{
+background-image: url("https://i.imgur.com/y3mZwLL.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: local;
+background-position: top left;
+}}
+[data-testid="stHeader"]{{
+background-color: rgba(0,0,0,0);
+}}
 
-st.markdown("""<h1 style="font-family:monospace; color:#8420BD; font-size: 100px;", align="center">My portfolio</h1>
-<br><br><br>""",
+[data-testid="stSidebar"]{{
+background-color: rgba(0,0,0,0.20);
+}}
+</style>
+"""
+
+st.markdown(pg_bg_img,unsafe_allow_html=True)
+st.markdown("""<h1 style="font-family:monospace; color:#713D0B; font-size: 100px;", align="center">My portfolio</h1>
+<br>""",
             unsafe_allow_html=True)
+st.markdown("""
+            <style>
+            .st-emotion-cache-1v0mbdj > img{
+                border-radius: 6.1%;
+
+                }
+            </style>
+
+            """, unsafe_allow_html=True)
 col1, col2 = st.columns([1,1.5])
 
 with col1:
@@ -34,29 +64,31 @@ with col2:
     <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">📖 Education</h1>
     <br>
 
+<h3 style="font-family:monospace; color:black; font-size: 30px;", align="center">🎓 SRMIST Ramapuram</h3>
+
+<br>
+<h5 style=font="red";>🎯 B.Tech Computer Science-Engineering: Spec in Cybersecurity</h5>
+
+    Current Year: 2nd Year
+    Year of Enrollment: 2022
+    Expected Year of Graduation: 2026
+<br>
 <h3 style="font-family:monospace; color:black; font-size: 30px;", align="center">🏫 St.John's English School & Junior College</h3>
-
-<h5>🎯 10th Grade (SSLC):</h5>
-
-    Year of Completion: 2020
-    Percentage: 92%
 <br>
 <h5>🎯 12th Grade (HSC):</h5>
 
     Year of Completion: 2022
     Percentage: 82%
 <br>
-<h3 style="font-family:monospace; color:black; font-size: 30px;", align="center">🎓 SRMIST Ramapuram</h3>
+<h5>🎯 10th Grade (SSLC):</h5>
 
+    Year of Completion: 2020
+    Percentage: 92%
 <br>
-<h5 style=font="red";>🎯 B.Tech Computer Science Engineering - Spec in Cybersecurity</h5>
 
-    Current Year: 2nd Year
-    Year of Enrollment: 2022
-    Expected Year of Graduation: 2026
+
     """
     st.markdown(about,unsafe_allow_html=True)
-
 
     st.markdown(education, unsafe_allow_html=True)
     st.markdown("###")

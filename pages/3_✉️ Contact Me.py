@@ -6,6 +6,25 @@ st.set_page_config(page_title="Contact Me", page_icon="✉️")
 
 opts = ["Job inquiries", "Project idea", "Other"]
 
+pg_bg_img = f"""
+<style>
+[data-testid="stApp"] {{
+background-image: url("https://i.imgur.com/y3mZwLL.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: local;
+background-position: top left;
+}}
+[data-testid="stHeader"]{{
+background-color: rgba(0,0,0,0);
+}}
+
+[data-testid="stSidebar"]{{
+background-color: rgba(0,0,0,0.20);
+}}
+</style>
+"""
+st.markdown(pg_bg_img,unsafe_allow_html=True)
 
 def sendmail(From: str, To: str, mesg: str, about: str):
 
@@ -26,7 +45,7 @@ def sendmail(From: str, To: str, mesg: str, about: str):
     s.quit()
 
 
-st.markdown("""<h1 style="font-family:monospace; color:black; font-size: 100px;", align="center">Contact Me</h1>
+st.markdown("""<h1 style="font-family:monospace; color:#713D0B; font-size: 100px;", align="center">Contact Me</h1>
 <br><br><br>""",
                 unsafe_allow_html=True)
 

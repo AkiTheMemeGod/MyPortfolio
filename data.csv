@@ -4,7 +4,7 @@ Password Checkerv2.0;A Command line interfaced secure password manager, that gen
 Password Manager Application;A standalone windows application for secure password management, that generates,checks and manages your passwords securely;100;https://github.com/AkiTheMemeGod/GUI_Pwd_Checker;Python;3.png
 Python Ransomware;A ransomware made entirely in python, When executed encrypts all the important data in the victim machine and demands a secret phrase.;80;https://github.com/AkiTheMemeGod/Python_ransomware;Python;4.png
 Numerical Methods and Analysis;A python script to calculate mathematical equations that involve numerical methods and analysis;30;https://github.com/AkiTheMemeGod/Numerical_Methods_Analysis;Python;5.png
-Encryption and Decryption(Cryptography);An Symmetric Encryption script written in python, for encrypting texts and .txt files.;90;https://github.com/AkiTheMemeGod/Cryptography_enc_decrypt;Python;6.png
+Encryption and Decryption;An Symmetric Encryption script written in python, for encrypting texts and .txt files.;90;https://github.com/AkiTheMemeGod/Cryptography_enc_decrypt;Python;6.png
 Hangman Game;A Simple Hangman game made entirely in python.;100;https://github.com/AkiTheMemeGod/Hangman_game;Python;7.png
 Vault-Bot;A Discord-Bot made in python, fetches important documents on demand, whenever needed,;70;https://github.com/AkiTheMemeGod/Vault-Bot-discord;Python;8.png
 Chat-Bot;An interactive discord-Bot made in python to randomly interact with people in a discord server.;70;https://github.com/AkiTheMemeGod/A-Simple-Chat-Bot;Python;9.png
