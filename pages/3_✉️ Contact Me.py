@@ -24,7 +24,8 @@ background-color: rgba(0,0,0,0.20);
 }}
 </style>
 """
-st.markdown(pg_bg_img,unsafe_allow_html=True)
+st.markdown(pg_bg_img, unsafe_allow_html=True)
+
 
 def sendmail(From: str, To: str, mesg: str, about: str):
 
@@ -46,12 +47,11 @@ def sendmail(From: str, To: str, mesg: str, about: str):
 
 
 st.markdown("""<h1 style="font-family:monospace; color:#713D0B; font-size: 100px;", align="center">Contact Me</h1>
-<br><br><br>""",
-                unsafe_allow_html=True)
+<br><br><br>""", unsafe_allow_html=True)
 
 with st.form("my_form", clear_on_submit=True):
     email = st.text_input(label="Your E-mail address here:")
-    what = st.selectbox(label="What do you want to talk about ?",placeholder="Select an option",options=opts,index=0)
+    what = st.selectbox(label="What do you want to talk about ?", placeholder="Select an option", options=opts, index=0)
     message = st.text_area(label="Your message: ")
 
     sent = st.form_submit_button("Send")
@@ -60,6 +60,4 @@ if sent:
         sendmail(email, "k.akashkumar@gmail.com", message, what)
         st.success("Email Sent Successfully !")
     else:
-        st.error("The feilds are empty")
-
-
+        st.error("The fields are empty")

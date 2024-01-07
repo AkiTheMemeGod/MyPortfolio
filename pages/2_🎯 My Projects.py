@@ -21,13 +21,14 @@ background-color: rgba(0,0,0,0.20);
 </style>
 """
 
-st.markdown(pg_bg_img,unsafe_allow_html=True)
+st.markdown(pg_bg_img, unsafe_allow_html=True)
 
 st.markdown("""<h1 style="font-family:monospace; color:#713D0B; font-size: 100px;",
- align="center">My Projects</h1><br><br><br>""",
-                unsafe_allow_html=True)
+ align="center">My Projects</h1><br><br><br>""", unsafe_allow_html=True)
+
 col1, col2, col3 = st.columns(3)
 data = pd.read_csv("data.csv", sep=";")
+
 with col1:
     for index, row in data[:6].iterrows():
         with st.container(border=1):
@@ -44,7 +45,7 @@ with col1:
             st.success(f"Language : {row['language']}")
             st.markdown("""
                         <style>
-                        .st-emotion-cache-1v0mbdj > img{\
+                        .st-emotion-cache-1v0mbdj > img{
                             margin-left: 8%;
                             width: 300px;
 
@@ -62,6 +63,7 @@ with col1:
                                use_container_width=True,
                                type="primary")
         st.markdown("###")
+
 with col2:
     for index, row in data[6:12].iterrows():
         with st.container(border=1):
@@ -78,7 +80,7 @@ with col2:
             st.success(f"Language : {row['language']}")
             st.markdown("""
                         <style>
-                        .st-emotion-cache-1v0mbdj > img{\
+                        .st-emotion-cache-1v0mbdj > img{
                             margin-left: 8%;
                             width: 300px;
 
@@ -113,7 +115,7 @@ with col3:
             st.success(f"Language : {row['language']}")
             st.markdown("""
                         <style>
-                        .st-emotion-cache-1v0mbdj > img{\
+                        .st-emotion-cache-1v0mbdj > img{
                             margin-left: 8%;
                             width: 300px;
 
