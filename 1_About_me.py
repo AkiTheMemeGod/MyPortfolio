@@ -36,7 +36,7 @@ education = """
     <h1 style="font-family:monospace; color:black; font-size: 60px;", align="center">📖 Education</h1>
     <br>
 
-<h3 style="font-family:monospace; color:black; font-size: 30px;", align="center">🎓 SR MIST Ramapuram</h3>
+<h3 style="font-family:monospace; color:black; font-size: 30px;", align="center">🎓 SRMIST Ramapuram</h3>
 
 <br>
 <h5 style=font="red";>🎯 B.Tech Computer Science-Engineering: Spec in Cybersecurity</h5>
