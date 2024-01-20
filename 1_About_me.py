@@ -3,14 +3,16 @@ import streamlit as st
 
 skills = ["Python",
           "Ethical Hacking",
-          "Flutter",
+          "Dart",
           "Web Development",
-          "Game Development"]
+          "Game Development",
+          "Pentesting"]
 hobbies = ["Gaming",
            "Coding",
            "Musical Instruments",
            "Competitive Touch-Typing",
-           "Cycling"]
+           "Cycling",
+           "Art"]
 
 st.set_page_config(layout="wide", page_title="Akash's Portfolio", page_icon="🧑‍🦱")
 
