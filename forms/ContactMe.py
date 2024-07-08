@@ -56,7 +56,7 @@ def contact_form():
         what = st.selectbox(label="What do you want to talk about ?", placeholder="Select an option", options=opts, index=0)
         message = st.text_area(label="Your message: ")
 
-        sent = st.form_submit_button("Send")
+        sent = st.form_submit_button("Send")# send
     if sent:
         if email and message != "":
             sendmail(email, "k.akashkumar@gmail.com", message, what)
