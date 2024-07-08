@@ -1,5 +1,5 @@
 import streamlit as st
-
+from forms.ContactMe import *
 
 skills = ["Python",
           "Ethical Hacking",
@@ -14,8 +14,12 @@ hobbies = ["Gaming",
            "Cycling",
            "Art"]
 
-st.set_page_config(layout="wide", page_title="Akash's Portfolio", page_icon="🧑‍🦱")
 
+
+st.set_page_config(layout="wide", page_title="Akash's Portfolio", page_icon="🧑‍🦱")
+@st.experimental_dialog("Contact Me")
+def show_contact_form():
+    contact_form()
 pg_bg_img = f"""
 <style>
 [data-testid="stApp"] {{
@@ -105,6 +109,12 @@ with col2:
 
     st.markdown(education, unsafe_allow_html=True)
     st.markdown("###")
+    c1, c2, c3 = st.columns([1,4,1])
+    with c2:
+        if st.button("✉️ Contact Me", use_container_width=True):
+            show_contact_form()
+
+
 st.markdown("---")
 
 
