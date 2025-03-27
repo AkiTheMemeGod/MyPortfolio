@@ -1,6 +1,7 @@
 import streamlit as st
-import pandas as pd
 st.set_page_config(layout="wide", page_icon="🎯", page_title="My Projects")
+
+import pandas as pd
 height = 800
 pg_bg_img = f"""
 <style>

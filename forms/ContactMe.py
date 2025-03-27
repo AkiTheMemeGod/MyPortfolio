@@ -2,7 +2,7 @@ import streamlit as st
 import smtplib as sm
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-st.set_page_config(page_title="Contact Me", page_icon="✉️")
+
 
 opts = ["Job inquiries", "Project idea", "Other"]
 
@@ -45,9 +45,6 @@ def sendmail(From: str, To: str, mesg: str, about: str):
     s.sendmail(From, To, msg.as_string())
     s.quit()
 
-
-st.markdown("""<h1 style="font-family:monospace; color:#713D0B; font-size: 100px;", align="center">Contact Me</h1>
-<br><br><br>""", unsafe_allow_html=True)
 
 
 def contact_form():
